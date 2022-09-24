@@ -1,0 +1,1 @@
+In addition to the many helpful tools Omnis features, this seperate plugin offers support for multiple plugins and pull requests.
