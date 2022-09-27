@@ -1,0 +1,25 @@
+#	Developer- reveal plugin systems regardless of installed plugins
+
+mission "revealPlugins"
+	name "Reveal all plugin systems"
+	description "For developers; reveals systems for all supported plugins, regardless if the plugins are installed."
+	job
+	repeat
+	source
+		government "vanilla" "request" "plugin"
+	on accept
+		event "revealPlugins"
+event "revealPlugins"
+	visit "Aben "
+	visit "Algol "
+	visit "Altera "
+	visit "Bunrodea "
+	visit "Derogam "
+	visit "Eternals "
+	visit "Gegno "
+	visit "Imperium "
+	visit "Incipias "
+	visit "Irm "
+	visit "Necron "
+	visit "Tau "
+	visit "Xapleaux "
