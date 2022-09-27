@@ -1,0 +1,34 @@
+mission "alteraGateway"
+	invisible
+	landing
+	source
+		government "vanilla" "request" "plugin"
+	on offer
+		event "alteraGateway"
+event "alteraGateway"
+	system "Altera "
+		add object "alteraGateway"
+			sprite "sprite/wispGreen"
+		add object
+			sprite "support/factionAltera"
+			distance 150
+			offset 180
+	system "Light of Altera"
+		add object "alteraGateway"
+			sprite "sprite/wispGreen"
+				distance 44.1758
+				period 14.0415
+		add object
+			sprite "sprite/gatewayOmnis"
+			distance 150
+mission "revealContent altera"
+	invisible
+	landing
+	repeat
+	source
+		government "vanilla" "request" "plugin"
+	on accept
+		event "revealContent altera"
+event "revealContent altera"
+	visit "Altera "
+	visit "Light of Altera"
