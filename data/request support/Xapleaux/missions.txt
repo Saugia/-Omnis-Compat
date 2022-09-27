@@ -1,0 +1,35 @@
+mission "xapleauxGateway"
+	invisible
+	landing
+	source
+		government "vanilla" "request" "plugin"
+	on offer
+		event "xapleauxGateway"
+event "xapleauxGateway"
+	system "Xapleaux "
+		add object "xapleauxGateway"
+			sprite "sprite/wispGreen"
+		add object
+			sprite "support/factionXapleaux"
+			distance 150
+			offset 180
+	system "Krigec-svolurealuo-jik"
+		add object "xapleauxGateway"
+			sprite "sprite/wispGreen"
+	 		distance 41.865815
+	 		period 98.134094
+	 		offset 180
+		add object
+			sprite "sprite/gatewayOmnis"
+			distance 150
+mission "revealContent xapleaux"
+	invisible
+	landing
+	repeat
+	source
+		government "vanilla" "request" "plugin"
+	on accept
+		event "revealContent xapleaux"
+event "revealContent xapleaux"
+	visit "Krigec-svolurealuo-jik"
+	visit "Xapleaux "

@@ -1,0 +1,32 @@
+mission "gegnoGateway"
+	invisible
+	landing
+	source
+		government "vanilla" "request" "plugin"
+	on offer
+		event "gegnoGateway"
+event "gegnoGateway"
+	system "Gegno "
+		add object "gegnoGateway"
+			sprite "sprite/wispGreen"
+		add object
+			sprite "support/factionGegno"
+			distance 150
+			offset 180
+	system "Heutesl"
+		add object "gegnoGateway"
+			sprite "sprite/wispGreen"
+			object
+				sprite "sprite/gatewayOmnis"
+				distance 150
+mission "revealContent gegno"
+	invisible
+	landing
+	repeat
+	source
+		government "vanilla" "request" "plugin"
+	on accept
+		event "revealContent gegno"
+event "revealContent gegno"
+	visit "Gegno "
+	visit "Heutesl"
