@@ -1,0 +1,4 @@
+#	Invisible
+
+outfit "mapAll"
+	map 10000

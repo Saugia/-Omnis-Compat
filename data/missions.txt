@@ -10,7 +10,6 @@ mission "revealPlugins"
 	on accept
 		event "revealPlugins"
 event "revealPlugins"
-	visit "Aben "
 	visit "Algol "
 	visit "Altera "
 	visit "Bunrodea "
@@ -19,7 +18,15 @@ event "revealPlugins"
 	visit "Gegno "
 	visit "Imperium "
 	visit "Incipias "
-	visit "Irm "
 	visit "Necron "
 	visit "Tau "
 	visit "Xapleaux "
+
+#	Reveals all connected systems anywhere you go
+
+mission "mapAll"
+	invisible
+	landing
+	repeat
+	on offer
+		outfit "mapAll"
